@@ -904,7 +904,7 @@ jobs:
             done
           fi
       - name: "🧩 Patch Kernel Image (KPM) | KPM修补镜像"
-        if: ${{ github.event.inputs.KPM == 'On' }}
+        if: ${{ github.event.inputs.KPM == 'true' }}
         run: |
           echo "🔧 正在应用KPM补丁..."
           cd kernel_workspace/kernel_platform/out/Final-Image-Find
